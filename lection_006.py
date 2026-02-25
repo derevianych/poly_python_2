@@ -238,7 +238,7 @@ df = pd.DataFrame(
 df.index.names = ['property', 'year']
 print(df)
 
-mi1 = pd.MultiIndex.from_product([["A1", "A1"], [2025, 2026]], names = ['property', 'year'])
+mi1 = pd.MultiIndex.from_product([["A1", "A2"], [2025, 2026]], names = ['property', 'year'])
 print(mi1)
 
 mi2 = pd.MultiIndex.from_product([["B1", "B2", "B3"], ['jan', 'feb']], names = ['shop', 'month'])
@@ -250,4 +250,5 @@ print(data)
 
 df = pd.DataFrame(data, index=mi1, columns=mi2)
 print(df)
+
 
