@@ -132,6 +132,7 @@ print(titanic.groupby('sex')['survived'].mean())
 
 print(titanic.groupby(['sex', 'class'])['survived'].mean().unstack())
 
+# Здесь указан абсолютный путь, а не относительный
 file_path = r'D:\Richard\Files\Personal files\Polytech\Additional\4th semester\Python\births\births.csv'
 births = pd.read_csv(file_path)
 
@@ -193,4 +194,5 @@ print(births_dom.head())
 #births_dow.plot()
 births_dom.plot()
 plt.show()
+
 
