@@ -194,5 +194,3 @@ print(births_dom.head())
 #births_dow.plot()
 births_dom.plot()
 plt.show()
-
-
